@@ -1,0 +1,98 @@
+#=============================================================================
+# dark_powered.toml --- dark powered configuration example for SpaceVim
+# Copyright (c) 2016-2020 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg at 163.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+# All SpaceVim option below [option] section
+[options]
+    # set spacevim theme. by default colorscheme layer is not loaded,
+    # if you want to use more colorscheme, please load the colorscheme
+    # layer
+    colorscheme = "hybrid"
+    colorscheme_bg = "dark"
+    # Disable guicolors in basic mode, many terminal do not support 24bit
+    # true colors
+    enable_guicolors = true
+    # Disable statusline separator, if you want to use other value, please
+    # install nerd fonts
+    statusline_separator = "arrow"
+    statusline_iseparator = "arrow"
+    buffer_index_type = 4
+    enable_tabline_filetype_icon = true
+    enable_statusline_mode = false
+    enable_language_specific_leader = false
+    windows_leader = ''
+    # vimcompatible = true
+    bootstrap_after  = "myspacevim#after"
+    filetree_direction = "left"
+    enable_googlesuggest = true
+    filemanager = "defx"
+    project_rooter_automatically = false
+
+[[layers]]
+  name = "colorscheme"
+
+[[layers]]
+  name = 'autocomplete'
+  autocomplete_method = "coc"
+
+[[layers]]
+  name = "checkers"
+
+[[layers]]
+  name = "chat"
+
+[[layers]]
+  name = 'shell'
+  default_position = 'top'
+
+# [[layers]]
+  # name = "chat"
+
+[[layers]]
+  name = "lang#r"
+
+[[layers]]
+  name = "lang#python"
+
+# [[layers]]
+  # name = "lang#ipynb"
+
+[[layers]]
+  name = "lang#markdown"
+
+# [[layers]]
+  # name = "lsp"
+  # filetypes = [
+    # "python"
+  # ]
+
+[[layers]]
+  name = "ui"
+
+# [[custom_plugins]]
+# repo = "karoliskoncevicius/vim-sendtowindow"
+# merged = false
+
+[[custom_plugins]]
+    repo = 'rstudio/rmarkdown'
+    merged = false
+    
+[[custom_plugins]]
+    repo = 'vim-pandoc/vim-rmarkdown'
+    merged = false
+
+[[custom_plugins]]
+    repo = 'vim-pandoc/vim-pandoc'
+    merged = false
+
+[[custom_plugins]]
+    repo = 'vim-pandoc/vim-pandoc-syntax'
+    merged = false
+
+[[custom_plugins]]
+    repo = 'vim-scripts/dbext.vim'
+    merged = false
