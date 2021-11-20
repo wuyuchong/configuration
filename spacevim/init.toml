@@ -31,6 +31,7 @@
     enable_googlesuggest = true
     filemanager = "defx"
     project_rooter_automatically = false
+    project_auto_root = false
 
 [[layers]]
   name = 'core'
@@ -41,7 +42,6 @@
 
 [[layers]]
   name = 'autocomplete'
-  autocomplete_method = "deoplete"
 
 [[layers]]
   name = "checkers"
@@ -49,12 +49,8 @@
 [[layers]]
   name = "chinese"
 
-[[layers]]
-  name = "chat"
-
-[[layers]]
-  name = 'shell'
-  default_position = 'top'
+# [[layers]]
+  # name = 'leaderf'
 
 # [[layers]]
   # name = "chat"
@@ -68,14 +64,13 @@
 # [[layers]]
   # name = "lang#ipynb"
 
-[[layers]]
-  name = "lang#markdown"
+# [[layers]]
+  # name = "lang#markdown"
 
 # [[layers]]
   # name = "lsp"
   # filetypes = [
     # "python"
-    # "r"
   # ]
 
 [[layers]]
@@ -104,6 +99,14 @@
 [[custom_plugins]]
     repo = 'goerz/jupytext.vim'
     merged = false
+
+# [[custom_plugins]]
+    # repo = 'mattn/vim-lsp-settings'
+    # merged = false
+#
+# [[custom_plugins]]
+    # repo = 'prabirshrestha/vim-lsp'
+    # merged = false
 
 # [[custom_plugins]]
     # repo = 'vim-scripts/dbext.vim'
