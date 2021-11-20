@@ -20,6 +20,7 @@ Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'Olical/aniseed'
 Plug 'jlesquembre/nterm.nvim'
 Plug 'preservim/nerdcommenter'
+Plug 'Shougo/deol.nvim'
 
 " theme
 Plug 'folke/lsp-colors.nvim'
